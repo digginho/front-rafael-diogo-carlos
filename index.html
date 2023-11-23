@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  @font-face {
+    font-family: 'Berkshire Swash';
+    src: url('BerkshireSwash-Regular.ttf') format('truetype');
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+
+}
+
+.left h2 {
+  padding-left: 8px;
+
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+
+.left p{
+  padding-left: 8px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  left: 80px;
+}
+
+.alinhamento{
+  flex: 35%;
+  padding: 15px 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+
+.img{
+
+  padding: 8px;
+  width: 20px;
+ height: 20px;
+  display: flex;
+  right: 80px;
+}
+
+
+.img a{
+
+padding-left: 8px;
+width: 20px;
+height: 20px;
+display: flex;
+right: 80px;
+}
+
+
+.footer{
+  flex: 35%;
+  padding: 15px 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #0850ad;
+
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #2f75cf;;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #2f75cf;;
+}
+
+</style>
+</head>
+<body>
+  
+  <div class="alinhamento" style="background-color:#0471ff">
+    <h2>  Desenvolvimento de Sistemas </h2>
+      </div>
+  <div class="left p" style="background-color:#2f75cf">
+<p>Linguagens de Programação</p>
+  </div>
+
+<div class="row">
+  <div class="left" style="background-color: #4b94f3;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="#h">HTML</a></li>
+      <li><a href="#c">CSS</a></li>
+      <li><a href="#j">JavaScript</a></li>
+      <li><a href="#ph">PHP</a></li>
+      <li><a href="#p">Python</a></li>
+      <li><a href="#jq">jQuery</a></li>
+      <li><a href="#s">SQL</a></li>
+      <li><a href="#b">Bootstrap</a></li>
+      <li><a href="#n">Node.js</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#70a6ec;">
+    
+    <h2 id="h">Html</h2>
+
+    <p>O HTML é o componente básico da web, ele permite inserir o conteúdo e estabelecer a estrutura básica de um website. Portanto, ele serve para dar significado e organizar as informações de uma página na web. Sem isso, o navegador não saberia exibir textos como elementos ou carregar imagens e outros conteúdos.</p>
+    <img src="img/174854.png">
+
+    <h2 id="c">CSS </h2>
+
+    <p> O CSS é um código em que você pode fazer alterações rápidas de layout, como definição de cores e fontes, por exemplo. Essa camada proporciona não apenas a facilidade de personalização, como também ajuda a diminuir a repetição de conteúdo na estrutura do código.</p>
+    <img src="img/css.png">
+
+    <h2 id="j"> JavaScript </h2>
+
+    <p> JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>
+    <img src="img/1crcyaithv7aiqh1z93v99q.png">
+
+    <h2 id="ph">PHP </h2>
+
+    <p> PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web.</p>
+    <img src="img/5968332.png">
+
+    <h2 id="p">Python </h2>
+
+    <p > Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.</p>
+    <img src="img/1561612826784.png">
+
+    <h2 id="jq">jQuery </h2>
+
+    <p> jQuery é uma biblioteca livre que contém funções da linguagem de programação JavaScript que interage com páginas em HTML, desenvolvida para simplificar os scripts executados/interpretados no navegador de internet do usuário.</p>
+    <img src="img/jquery+logo.png">
+
+    <h2 id="s">SQL </h2>
+
+    <p> Structured Query Language, lit. "linguagem de consulta estruturada", é uma linguagem de domínio específico desenvolvida para gerenciar dados relacionais em um sistema de gerenciamento de banco de dados, ou para processamento de fluxo de dados em um sistema de gerenciamento de fluxo de dados.</p>
+    <img src="img/9544010.png">
+
+    <h2 id="b">Bootstrap </h2>
+
+    <p> Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web, usando HTML, CSS e JavaScript, baseado em modelos de design para a tipografia, melhorando a experiência do usuário em um site amigável e responsivo.</p>
+    <img src="img/free-bootstrap-6-1175203.webp">
+
+    <h2 id="n">Node.js </h2>
+  
+    <p> Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web. A principal característica do Node.js é sua arquitetura assíncrona e orientada por eventos.</p>
+    <img src="img/nodejs-logo.png">
+
+  </div>
+</div>
+
+<div class="footer">
+
+  <b> Diogo, Rafael, Carlos Silva</b>
+
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
